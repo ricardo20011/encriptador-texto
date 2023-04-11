@@ -1,1 +1,1 @@
-# escriptador-texto
+# encriptador-texto
