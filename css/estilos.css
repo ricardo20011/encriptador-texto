@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    width: 100%;
+    background-color: #F3F5FC;
+}
+header {
+    width: 20%;
+}
+header svg {
+    position: relative;
+    top:40px;
+    left:34px;
+}
+main {
+    position: relative;
+    width: 90%;
+    height: 97vh;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr 80px;
+    justify-content: center;
+    align-items: center;
+}
+main .contenedor-input {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 168px);
+}
+main textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    max-width: 95%;
+    max-height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family:'Inter', sans-serif;
+    font-size: 22px;
+    line-height: 48px;
+    color: #0A3871;
+}
+main textarea::placeholder {
+    color: #0A3871;
+}
+
+.contenedor-alerta svg {
+    width: 12px;
+    position: relative;
+    top: 3px;
+}
+.contenedor-alerta p {
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 10px;
+}
+
+.contenedor-botones button {
+    width: 280px;
+    height: 60px;
+    border-radius: 24px;
+    border: none;
+    background-color: #0A3871;
+    color: white;
+    cursor: pointer;
+}
+.contenedor-botones button:hover {
+    background-color: #0a3263;
+}
+.contenedor-botones button:nth-child(2n) {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.contenedor-botones button:nth-child(2n):hover {
+    background-color: #d1d5da;
+}
+
+.contenedor-mensajeFinal {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    width: 90%;
+    overflow: auto;
+    word-break: keep-all;
+    hyphens: auto;
+    height: 95%;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 24px 32px -8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-mensajeFinal .titulo-1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+    padding: 10px 25px;
+}
+.contenedor-mensajeFinal .titulo-2 {
+    font-size: 14px;
+    padding: 10px 30px;
+}
+
+#mensajeFinal {
+    font-size: 18px;
+}
+.contenedor-mensajeFinal svg {
+    width:80%;
+}
+
+.contenedor-mensajeFinal .oculto {
+    display: none;
+}
