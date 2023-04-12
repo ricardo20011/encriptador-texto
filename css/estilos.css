@@ -70,7 +70,7 @@ main textarea::placeholder {
 }
 
 .contenedor-botones button {
-    width: 280px;
+    width: 220px;
     height: 60px;
     border-radius: 24px;
     border: none;
@@ -176,4 +176,65 @@ main textarea::placeholder {
 /*---Clase para boton copiar, se muestra dependiendo si se necesita o no--*/
 .contenedor-btn-copiar .mostrar-btn-copiar {
     display: block;
+}
+
+
+
+/*--------Responsivo para tabletas 768px-------------*/
+
+@media screen and (max-width: 780px){
+    body {
+        flex-direction: column;
+    }
+    main {
+        width: 80%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 160px 1fr;
+    }
+    .contenedor-mensajeFinal {
+        height: auto;
+        margin: auto;
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .contenedor-mensajeFinal svg {
+        display: none;
+    }
+    .contenedor-alerta {
+        width: 85%;
+        margin: auto;
+    }
+    .contenedor-botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-botones button {
+        width: 300px;
+    }
+    .contenedor-btn-copiar {
+        position: relative;
+        bottom: 10px;
+    }
+}
+
+
+/*--------Responsivo para tabletas 375px-------------*/
+@media screen and (max-width: 375px){
+    main {
+        width: 90%;
+        grid-template-rows: 2fr 180px 1fr;
+        padding: auto;
+    } 
+    .contenedor-botones {
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor-botones button:nth-child(2n) {
+        margin-top: 10px;
+    }
+    .contenedor-mensajeFinal {
+        width: 95%;
+    }
 }
