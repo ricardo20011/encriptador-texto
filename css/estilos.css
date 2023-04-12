@@ -19,21 +19,24 @@ header svg {
     top:40px;
     left:34px;
 }
+
 main {
     position: relative;
     width: 90%;
     height: 97vh;
     display: grid;
     grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: 1fr 80px;
+    grid-template-rows: 1fr 160px;
     justify-content: center;
     align-items: center;
 }
+
 main .contenedor-input {
     position: relative;
     width: 100%;
     height: calc(100% - 168px);
 }
+
 main textarea {
     position: absolute;
     height: 100%;
@@ -49,6 +52,7 @@ main textarea {
     line-height: 48px;
     color: #0A3871;
 }
+
 main textarea::placeholder {
     color: #0A3871;
 }
@@ -58,6 +62,7 @@ main textarea::placeholder {
     position: relative;
     top: 3px;
 }
+
 .contenedor-alerta p {
     font-size: 12px;
     line-height: 18px;
@@ -73,14 +78,19 @@ main textarea::placeholder {
     color: white;
     cursor: pointer;
 }
+
 .contenedor-botones button:hover {
+    transition: 0.4s all ease-in;
     background-color: #0a3263;
 }
+
 .contenedor-botones button:nth-child(2n) {
     background-color: #D8DFE8;
     color: #0A3871;
 }
+
 .contenedor-botones button:nth-child(2n):hover {
+    transition: 0.4s all ease-in;
     background-color: #d1d5da;
 }
 
@@ -100,6 +110,7 @@ main textarea::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .contenedor-mensajeFinal .titulo-1 {
@@ -115,11 +126,54 @@ main textarea::placeholder {
 
 #mensajeFinal {
     font-size: 18px;
+    color: #3b3b3b;
+    font-weight: 400;
 }
+
 .contenedor-mensajeFinal svg {
     width:80%;
 }
 
+.contenedor-btn-copiar {
+    position: absolute;
+    width: 100%;
+    height:60px;
+    bottom: 20px;
+}
+
+.contenedor-btn-copiar .btn-copiar {
+    width: 90%;
+    height: 60px;
+    border: 1px solid #0a3263;
+    border-radius: 24px;
+    background-color: white;
+    margin: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-mensajeFinal .btn-copiar:hover {
+    transition: 0.4s all ease-in;
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+
+/*------Clases que se varian segun los eventos que se utilizen cen main.js--------*/
+/*--ajusta el texto encriptado o desencriptado--*/
+.ajustar-texto {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: start;
+}
+
+/*---Se oculta el svg y el mensaje de "No hay un mensaje a encriptar"--*/
 .contenedor-mensajeFinal .oculto {
     display: none;
+}
+
+/*---Clase para boton copiar, se muestra dependiendo si se necesita o no--*/
+.contenedor-btn-copiar .mostrar-btn-copiar {
+    display: block;
 }
