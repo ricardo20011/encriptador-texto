@@ -221,7 +221,7 @@ main textarea::placeholder {
 
 
 /*--------Responsivo para tabletas 375px-------------*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
     main {
         width: 90%;
         grid-template-rows: 2fr 180px 1fr;
