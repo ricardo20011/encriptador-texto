@@ -17,3 +17,7 @@ Proyecto realizado en 2 dias, utilizando las tegnologias:
 - HTML5
 - CSS3
 - JavaScript
+
+
+GitPages:
+https://ricardo20011.github.io/encriptador-texto/
