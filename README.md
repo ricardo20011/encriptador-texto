@@ -18,6 +18,4 @@ Proyecto realizado en 2 dias, utilizando las tegnologias:
 - CSS3
 - JavaScript
 
-
-GitPages:
-https://ricardo20011.github.io/encriptador-texto/
+Demo: https://rickbroken.com/encriptador-texto/
