@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home4/rickbro1/public_html/prueba
-    - /bin/cp -r * $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
