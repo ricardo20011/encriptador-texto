@@ -73,7 +73,7 @@ btnDesencriptar.addEventListener('click',()=>{
         mensajeDos.classList.remove('oculto');
         contMensajeFinal.classList.remove('ajustar-texto');
         btnCopiar.classList.remove('mostrar-btn-copiar');
-
+ 
         //Se reinicia el contenido de la etiqueta que contiene el mensaje final, encriptado o desencriptado
         mensajeFinal.innerText = '';
     } else {
