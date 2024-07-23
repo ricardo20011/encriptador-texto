@@ -2,4 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home4/rickbro1/public_html/prueba
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -R index.html $DEPLOYPATH
+    - /bin/cp -R css/estilos.css $DEPLOYPATH
+    - /bin/cp -R js/main.js $DEPLOYPATH
